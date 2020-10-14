@@ -1,0 +1,8 @@
+<div class="stock">
+  <div
+    class="stock-card"
+    *ngFor="let item of DB.data">
+    <span *ngIf="item">Курс {{ item.Name }} — {{ item.Value}}</span>
+    <span *ngIf="!item">Данные не получены</span>
+  </div>
+</div>
